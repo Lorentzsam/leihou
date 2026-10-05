@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>雷猴橱窗</title>
+<meta name="description" content="一条夜里亮着灯的街，每扇橱窗都是一家小店。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪟</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="street-head">
+  <p class="eyebrow">LEIHOU · 橱窗街</p>
+  <h1 class="neon">雷猴橱窗</h1>
+  <p class="lede">一条夜里亮着灯的街。每扇橱窗是一家小店，凑近看看，喜欢就带走。</p>
+  <nav class="chips" id="chips" aria-label="橱窗分类"></nav>
+</header>
+
+<main class="street" id="street" aria-live="polite"></main>
+
+<footer class="street-foot">
+  <p>演示站点 · 店铺与商品均为虚构，暂未接入支付</p>
+</footer>
+
+<button class="bag-btn" id="bagBtn" aria-haspopup="dialog">
+  <span aria-hidden="true">🛍️</span> 购物袋 <b id="bagCount">0</b>
+</button>
+
+<dialog class="sheet" id="shopDlg" aria-labelledby="shopTitle"></dialog>
+<dialog class="sheet bag" id="bagDlg" aria-labelledby="bagTitle"></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="windows.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
